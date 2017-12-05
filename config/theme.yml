@@ -1,5 +1,5 @@
-name: classic2
-display_name: Classic2
+name: classic
+display_name: Classic
 version: 1.0.0
 author:
   name: "PrestaShop Team"
@@ -32,10 +32,22 @@ assets:
 
   # The following lines are showing how to load assets in your page
   # Uncomment and change value to start loading css or js files
-#  css:
-#    all:
-#      - id: custom-lib-style
-#        path: assets/css/custom-lib.css
+  css:
+    index:
+      - id: hover1
+        path: assets/css/set1.css
+        priority: 1001
+      - id: hover2
+        path: assets/css/set2.css
+        priority: 1002
+      - id: custom-lib-style2
+        path: assets/css/custom-home.css
+        priority: 1000
+  js:
+    index:
+      - id: parallax
+        path: assets/js/parallax.min.js
+
 #    product:
 #      - id: product-style
 #        path: assets/css/product.css

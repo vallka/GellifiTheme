@@ -1,0 +1,156 @@
+/* custom-home */
+
+main {
+    /*background: url(/img/NewBackground2.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+    */
+    background:transparent;
+}
+
+
+#wrapper, #footer {
+    background:transparent;
+}
+
+.carousel .carousel-inner {
+    height: inherit;
+}
+
+#custom-text {
+    background: transparent;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+#custom-text h3 {
+    color: #fff;
+}
+
+.cc-1 {
+top:-100px;
+}
+
+.cc-2 {
+top:37px;
+}
+
+
+.cc-0 {
+    height: 120px;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.top-home-block {
+    background: white;
+    margin-bottom: -65px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#html-block-1 {
+    background-color: #fff;
+}
+
+#featured-products-container {
+    background-color: #fff;
+    margin-bottom: -24px;
+}
+
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view {
+    color: white !important;
+    background-color: #d73672;
+    display: block;
+    height: 80%;
+    margin-top: -9px;
+    padding-top: 3px;
+}
+
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view:hover, 
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view a:hover 
+{
+    color: white !important;
+    background-color: #f766a2;
+}
+
+
+/* blockinstagramm */
+#blockinstagram {
+    color: #fff;
+    background-color: #000;
+    padding-top:50px;
+}
+#blockinstagram .h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#blockinstagram figure {
+position: relative;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+}
+
+#blockinstagram figure img {
+position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: auto;
+  min-width:100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pink-balloon {
+  position: absolute;
+  z-index: 1;
+  background-color: #d73672;
+  color: #fff;
+  width: 10rem;
+  height: 5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  top: 62%;
+  left: 35%;
+  transition: all 1.5s ease-out 0s;
+  opacity: 0;
+display:none;
+}
+
+.pink-balloon a {
+  color: #fff;
+}
+
+.carousel .carousel-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: -400px;
+    color: #fff;
+    width: 400px;
+    padding:2rem;
+    background-color: #d73672;
+    height: 100%;
+    opacity: 0;
+}

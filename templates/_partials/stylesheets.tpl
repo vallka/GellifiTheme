@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+
 {foreach $stylesheets.inline as $stylesheet}
   <style>
     {$stylesheet.content}

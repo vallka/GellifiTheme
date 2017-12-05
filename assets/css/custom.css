@@ -2,3 +2,273 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+}
+
+a:hover,#_mobile_contact_link a:hover {
+    color: #d73672 !important;
+
+/* #d13e74 */
+}
+
+button i {
+    color: #d73672 !important;
+}
+
+
+.btn-primary {
+    background-color: #d73672;
+}
+
+.btn-primary:hover {
+    background-color: #f766a2;
+}
+
+
+#_mobile_contact_link a {
+    display:block;
+text-transform: uppercase;
+color: white !important;
+}
+
+
+#header {
+    background: none;
+    height: 173px;
+}
+
+#header .header-top{
+    background: #000;
+}
+
+
+#header a, #header .header-top a[data-depth="0"] {
+    color: #fff;
+}
+
+#header .header-nav {
+  border: none;
+  background: none;
+    color: #fff;
+
+}
+
+#header .header-top .menu {
+    margin-top: 38px;
+}
+
+#top-menu {
+  display:none;
+}
+
+#contact-link a {
+  padding-right: 10px;
+}
+
+.header-top .search-widget {
+    float: right;
+    margin-top: 17px;
+}
+
+@media (max-width: 767px){
+.header-top .search-widget {
+    float: none;
+    margin-top: 57px;
+}
+}
+
+#header .header-nav .blockcart {
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+#header .header-nav .blockcart {
+    background: #000;
+    color: #fff;
+}
+
+#header .header-nav .cart-preview .shopping-cart {
+    color: #fff;
+}
+
+.header-top-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #000;
+}
+
+.search-widget form input[type="text"],
+.search-widget form input[type="text"]:focus
+{
+    border: none;
+    color: #fff;
+    background-color:#333;
+    outline:none;
+    box-shadow:none;
+}
+
+#mobile_top_menu_wrapper {
+    background: #000;
+}
+
+
+
+.products-sort-order .select-title,
+#products .highlighted-informations, .featured-products .highlighted-informations, .product-accessories .highlighted-informations, .product-miniature .highlighted-informations,
+#products .thumbnail-container, .featured-products .thumbnail-container, .product-accessories .thumbnail-container, .product-miniature .thumbnail-container,
+#search_filters, #search_filters_brands, #search_filters_suppliers, .card, .carousel,
+.block-categories {
+    box-shadow: none;
+}
+
+#wrapper {
+    background:#fff;
+}
+
+#footer {
+    background:#000;
+}
+
+.footer-container {
+    background:#333;
+}
+
+.copynote {
+    color: #d73672;
+}
+
+.block-contact .block-contact-title, .linklist .blockcms-title a {
+    color: #fff;
+}
+
+.featured-products {
+    background:#fff;
+    padding-top: 20px;
+    margin-bottom:25px;
+}
+
+#products .products, .featured-products .products, .product-accessories .products, .product-miniature .products {
+    background:#fff;
+}
+
+.h1.products-section-title {
+    color: #000;
+}
+
+
+.h1, .h2, .h3, #block_myaccount_infos .myaccount-title a {
+    color: #fff;
+}
+
+#contact-link {font-family: 'Open Sans'; font-size: 12px;}
+.top-menu {font-size:12px; letter-spacing: 1.2px; font-weight:600;}
+.right-nav {font-size: 12px;}
+
+#products .product-miniature .discount-percentage.on-sale, #products .product-miniature .on-sale.on-sale, #products .product-miniature .online-only.on-sale, #products .product-miniature .product-flags .new.on-sale, .featured-products .product-miniature .discount-percentage.on-sale, .featured-products .product-miniature .on-sale.on-sale, .featured-products .product-miniature .online-only.on-sale, .featured-products .product-miniature .product-flags .new.on-sale, .product-accessories .product-miniature .discount-percentage.on-sale, .product-accessories .product-miniature .on-sale.on-sale, .product-accessories .product-miniature .online-only.on-sale, .product-accessories .product-miniature .product-flags .new.on-sale, .product-miniature .product-miniature .discount-percentage.on-sale, .product-miniature .product-miniature .on-sale.on-sale, .product-miniature .product-miniature .online-only.on-sale, .product-miniature .product-miniature .product-flags .new.on-sale {
+background-color: #d73672;
+width: 30%;
+font-size: 12px;
+left:-5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#products .product-miniature .discount-percentage, #products .product-miniature .on-sale, #products .product-miniature .online-only, #products .product-miniature .product-flags .new, .featured-products .product-miniature .discount-percentage, .featured-products .product-miniature .on-sale, .featured-products .product-miniature .online-only, .featured-products .product-miniature .product-flags .new, .product-accessories .product-miniature .discount-percentage, .product-accessories .product-miniature .on-sale, .product-accessories .product-miniature .online-only, .product-accessories .product-miniature .product-flags .new, .product-miniature .product-miniature .discount-percentage, .product-miniature .product-miniature .on-sale, .product-miniature .product-miniature .online-only, .product-miniature .product-miniature .product-flags .new {
+box-shadow: none;
+font-size: 12px;
+width: 30%;
+left: 0;
+  border-radius: 15px;
+  text-align: center;
+;
+
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 4px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor:pointer;
+}
+
+.colors_filter {
+  margin: 20px;
+}
+
+.btn-circle.active{
+  /*box-shadow: 0px 0px 2px 0px black;*/
+  width: 34px;
+  height: 34px;
+  margin: 2px;
+}
+
+.btn-circle.working{
+  animation: stretch 0.7s infinite;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1):
+  }
+}
+
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@media (min-width:576px){
+.normal-width {
+    width: 540px;
+    max-width: 100%;
+}
+}
+
+}
+@media (min-width: 768px){
+.normal-width {
+    width: 720px;
+    max-width: 100%;
+}
+}
+
+
+}
+@media (min-width: 992px){
+.normal-width {
+    width: 960px;
+    max-width: 100%;
+}
+}
+@media (min-width: 1200px){
+.normal-width {
+    width: 1200px;
+    max-width: 100%;
+}
+.container {
+    width: 1200px;
+}
+}
+.normal-width {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

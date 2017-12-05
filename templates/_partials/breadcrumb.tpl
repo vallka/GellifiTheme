@@ -22,6 +22,19 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
+<style>
+#wrapper .breadcrumb li:nth-last-child(2)::after {
+    content: "";
+}
+#wrapper .breadcrumb li:last-child {
+    float:right;
+}
+#wrapper .breadcrumb li:last-child::before {
+    content: "<<";
+}
+</style>
+
 <nav data-depth="{$breadcrumb.count}" class="breadcrumb hidden-sm-down">
   <ol itemscope itemtype="http://schema.org/BreadcrumbList">
     {foreach from=$breadcrumb.links item=path name=breadcrumb}
@@ -34,5 +47,12 @@
         </li>
       {/block}
     {/foreach}
+
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="javascript:history.back()">
+            <span itemprop="name">Back</span>
+          </a>
+        </li>
+
   </ol>
 </nav>
