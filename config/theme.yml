@@ -79,9 +79,9 @@ global_settings:
         - ps_searchbar
       displayHome:
         - ps_imageslider
-        - ps_featuredproducts
-        - ps_banner
         - ps_customtext
+        - ps_featuredproducts
+        - blockinstagram
       displayFooterBefore:
         - ps_emailsubscription
         - ps_socialfollow
