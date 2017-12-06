@@ -1,10 +1,10 @@
-name: classic
-display_name: Classic
-version: 1.0.0
+name: gellifitheme
+display_name: GellifiTheme
+version: 0.0.1
 author:
-  name: "PrestaShop Team"
-  email: "pub@prestashop.com"
-  url: "http://www.prestashop.com"
+  name: "Vallka"
+  email: "vallka@vallka.com"
+  url: "http://www.vallka.com"
 
 meta:
   compatibility:
