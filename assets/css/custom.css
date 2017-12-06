@@ -186,8 +186,27 @@ width: 30%;
 left: 0;
   border-radius: 15px;
   text-align: center;
-;
+}
 
+
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view {
+    color: white !important;
+    background-color: #d73672;
+    display: block;
+    height: 80%;
+    margin-top: -9px;
+    padding-top: 3px;
+}
+
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view:hover,
+#products .highlighted-informations .quick-view, .featured-products .highlighted-informations .quick-view a:hover
+{
+    color: white !important;
+    background-color: #f766a2;
+}
+
+#products .product-miniature, .featured-products .product-miniature, .product-accessories .product-miniature, .product-miniature .product-miniature {
+    margin: 0 15px;
 }
 
 .btn-circle {
@@ -234,41 +253,42 @@ left: 0;
   margin-right: -50vw;
 }
 
-@media (min-width:576px){
+@media (min-width: 576px){
 .normal-width {
     width: 540px;
     max-width: 100%;
 }
 }
 
-}
+
 @media (min-width: 768px){
-.normal-width {
-    width: 720px;
-    max-width: 100%;
-}
+  .normal-width {
+      width: 720px;
+      max-width: 100%;
+  }
 }
 
 
-}
 @media (min-width: 992px){
-.normal-width {
-    width: 960px;
-    max-width: 100%;
+  .normal-width {
+      width: 960px;
+      max-width: 100%;
+  }
 }
-}
+
 @media (min-width: 1200px){
-.normal-width {
-    width: 1200px;
-    max-width: 100%;
+  .normal-width {
+      width: 1200px;
+      max-width: 100%;
+  }
+  .container {
+      width: 1200px;
+  }
 }
-.container {
-    width: 1200px;
-}
-}
+
 .normal-width {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
 }

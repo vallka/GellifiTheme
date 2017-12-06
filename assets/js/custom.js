@@ -4,37 +4,38 @@
  */
 
 $(function(){
+
+
+  console.log($( window ).width());
+
   setup_menu();
+  if ($(window).width()>= 992){
+    setup_fixed_menu();
+  }
+
   setup_color_circles();
   setup_carousel();
 
   setup_hover_effects();
 
+  if ($(window).width()>= 992){
+    if ($('#custom-text').length>0) {
+      //$('main').parallax({imageSrc: '/img/NewBackground2.jpg'});
+      $('main').parallax({imageSrc: '/img/buck-graund.jpg'});
+    }
+
+    setup_scroll_effects();
+  }
+
+});
 
 
-
-  //console.log($(window).innerHeight())
-  //console.log($(window).outerHeight())
-
-
-  var headerH=93;
-
-  $(document).scroll(function(){
-    var sc=$(document).scrollTop();
-
-    if (sc>=headerH) fireFixHead(1);
-    else fireFixHead(0);
-  });
-
+function setup_scroll_effects() {
   if ($('.featured-products').length>0) {
-    $('main').parallax({imageSrc: '/img/NewBackground2.jpg'});
 
     $(document).scroll(function(){
       var sc=$(document).scrollTop();
       var fp = $('.featured-products');
-
-
-//console.log(sc+' '+fp.offset().top+' '+$(window).innerHeight());
 
       if (sc>=fp.offset().top-$(window).innerHeight()) fireSec(fp,1);
       else fireSec(fp,0);
@@ -73,8 +74,18 @@ $(function(){
     });
   }
 
-});
+}
 
+function setup_fixed_menu() {
+  var headerH=93;
+
+  $(document).scroll(function(){
+    var sc=$(document).scrollTop();
+
+    if (sc>=headerH) fireFixHead(1);
+    else fireFixHead(0);
+  });
+}
 
 function setup_menu() {
   //alert(1);
@@ -261,7 +272,7 @@ function setup_carousel() {
 
 function setup_hover_effects() {
   $('.grid img.hover-lexi').each(function(){
-  
+
     var div = $(this).parent('div.grid');
     var img = $(this).detach();
     var txt = img.attr('alt');
@@ -271,7 +282,7 @@ function setup_hover_effects() {
   });
 
   $('.products .thumbnail-container img').each(function(){
-  
+
     var div = $(this).parents('div.thumbnail-container');
     var a = div.find('a.product-thumbnail');
     div.addClass('grid');
